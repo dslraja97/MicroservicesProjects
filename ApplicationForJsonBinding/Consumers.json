@@ -1,0 +1,14 @@
+{
+	"name": "Ganesha",
+	"age": 27,
+	"iSbpl": true,
+	"salary": 65000,
+	"sex": "Male",
+	"address": {
+		"street": "76B pillayiar Patti Street",
+		"city": "Ulagam",
+		"state": "Kailayam",
+		"contry": "Andam",
+		"pinCode": "000000"
+	}
+}
