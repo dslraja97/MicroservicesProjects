@@ -21,12 +21,14 @@ public class BookingController {
 			"application/xml" })
 	public Ticket bookTicket(@RequestBody Passenger passenger) {
 
-		System.out.println(passenger);
+		System.out.println("Irctc bookTicket : " + passenger);
 		Random random = new Random();
 		int ticketId = random.nextInt();
 		Ticket ticket = new Ticket();
 		ticket.setDestination(passenger.getDestination());
-		ticket.setPassangerName(passenger.getfName() + "" + passenger.getlName());
+		String passengerName = passenger.getfName() + " " + passenger.getlName();
+		System.out.println("Irctc bookTicket Passenger name: " + passengerName);
+		ticket.setPassangerName(passengerName);
 		ticket.setSource(passenger.getSource());
 		ticket.setTicketCost("450");
 		ticket.setTicketId(ticketId);
