@@ -5,8 +5,6 @@ spring:
     admin:
       client:
         url: http://localhost:1111/
-server:
-  port: 9092
 management:
   endpoints:
     web:
