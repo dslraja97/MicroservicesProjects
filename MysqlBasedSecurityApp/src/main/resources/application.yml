@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: MysqlBasedSecurityApp
+  datasource:
+    url: jdbc:mysql://localhost:3306/ganesha
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
